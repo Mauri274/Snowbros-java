@@ -207,6 +207,11 @@ public class Juego implements ControladorJuego, ControladorPuntaje {
 
     public void terminarJuego(boolean gano) {
         if (partidaEnCurso) {
+
+            if (pisoActual != null) {
+                pisoActual.vaciarPiso();
+            }
+            
             partidaEnCurso = false;
             hiloPrincipal.detener();
             modoActual.gestionarFinDePartida(gano);
