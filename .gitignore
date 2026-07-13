@@ -1,0 +1,6 @@
+# Configuraciones del editor
+.vscode/
+
+# Archivos compilados de Java
+bin/
+*.class
